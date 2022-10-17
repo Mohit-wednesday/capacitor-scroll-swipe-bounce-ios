@@ -7,7 +7,7 @@ export class CapacitorScrollSwipeBounceIosWeb
   implements CapacitorScrollSwipeBounceIosPlugin
 {
   async echo(options: { value: string }): Promise<{ value: string }> {
-    console.log('ECHO', options);
+    console.log('LOGGING OPTIONS', options);
     return options;
   }
 }

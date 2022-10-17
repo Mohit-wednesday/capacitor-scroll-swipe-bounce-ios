@@ -7,12 +7,8 @@ import Capacitor
  */
 @objc(CapacitorScrollSwipeBounceIosPlugin)
 public class CapacitorScrollSwipeBounceIosPlugin: CAPPlugin {
-    private let implementation = CapacitorScrollSwipeBounceIos()
-
-    @objc func echo(_ call: CAPPluginCall) {
-        let value = call.getString("value") ?? ""
-        call.resolve([
-            "value": implementation.echo(value)
-        ])
-    }
+    @objc override public func load() {
+        self.bridge?.getWebView()?.scrollView.bounces = true
+        self.bridge?.webView?.allowsBackForwardNavigationGestures = true
+        }
 }
