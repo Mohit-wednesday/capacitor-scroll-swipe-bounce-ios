@@ -8,7 +8,7 @@ import Capacitor
 @objc(CapacitorScrollSwipeBounceIosPlugin)
 public class CapacitorScrollSwipeBounceIosPlugin: CAPPlugin {
     @objc override public func load() {
-        self.bridge?.getWebView()?.scrollView.bounces = true
+        self.bridge?.webView?.scrollView.bounces = true
         self.bridge?.webView?.allowsBackForwardNavigationGestures = true
         }
 }
