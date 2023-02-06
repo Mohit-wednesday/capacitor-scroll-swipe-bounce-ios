@@ -1,4 +1,5 @@
 # capacitor-scroll-swipe-bounce-ios
+[![npm version](https://badge.fury.io/js/capacitor-scroll-swipe-bounce-ios.svg)](https://badge.fury.io/js/capacitor-scroll-swipe-bounce-ios)
 
 Capacitor plugin for iOS Webview swipe gesture and bounce
 
